@@ -15,9 +15,14 @@
 """Simple helper functions for linear regression"""
 
 # package version
-from linreg_helpers.version import __version__
+from .version import __version__
 
 # silence the pyflakes syntax checker
 assert __version__ or True
+
+from .core import plot_sloping_line, plot_linreg, train_linreg
+
+__all__ = ["plot_sloping_line", "plot_linreg", "train_linreg"]
+
 
 # End of file
